@@ -1,0 +1,28 @@
+# Окружение и зависимости
+.venv/
+venv/
+ENV/
+env/
+
+# Системные папки IDE (PyCharm)
+.idea/
+.vscode/
+
+# Кэш Python и компиляция
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Базы данных и локальные хранилища (если появятся в корне)
+*.db
+*.sqlite3
+*.log
+
+# Файлы окружения с секретами (чтобы ИИ случайно не слил ваши пароли)
+.env
+.env.local
