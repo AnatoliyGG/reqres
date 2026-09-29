@@ -15,7 +15,7 @@ class UserAPI:
         params: Dict[str, Any] = {}
         if page is not None:
           params["page"] = page
-        return self._session.get(f"({self.BASE_PATH}", params=params)
+        return self._session.get(f"{self.BASE_PATH}", params=params)
 
     def get_user_by_id(self, user_id: int) -> requests.Response:
         """GET /api/users/{id} — получение одного пользователя по ID."""
